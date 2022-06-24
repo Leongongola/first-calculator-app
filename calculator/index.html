@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <!-- calculatoprs container to so i can make it a clear section separate from the body -->
+    <div id="calculator-container">
+        <div id="calculator-header">CALCULATOR</div> 
+        <!-- second part for the display screen for the operators clicked and a clear screen to remove everything on the display screen -->
+        <div id="second-part">
+            <div ><input type="text" id="result" value=""></div>
+            <div ><input type="button" id="remove-values" onclick="clearScreen()" value="C"></div>
+        </div>
+        <!-- table to put all the operators for the calculator -->
+        <table>
+            <tr>
+                <td><input type="button" id="operators" value="7" onclick="display('7')"></td>
+                <td><input type="button" id="operators" value="8" onclick="display('8')"></td>
+                <td><input type="button" id="operators" value="9" onclick="display('9')"></td>
+                <td><input type="button" id="operators" value="*" onclick="display('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="operators" value="4" onclick="display('4')"></td>
+                <td><input type="button" id="operators" value="5" onclick="display('5')"></td>
+                <td><input type="button" id="operators" value="6" onclick="display('6')"></td>
+                <td><input type="button" id="operators" value="-" onclick="display('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="operators" value="1" onclick="display('1')"></td>
+                <td><input type="button" id="operators" value="2" onclick="display('2')"></td>
+                <td><input type="button" id="operators" value="3" onclick="display('3')"></td>
+                <td><input type="button" id="operators" value="+" onclick="display('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="operators" value="." onclick="display('.')"></td>
+                <td><input type="button" id="operators" value="0" onclick="display('0')"></td>
+                <td><input type="button" id="operators" value="/" onclick="display('/')"></td>
+                <td><input type="button" id="operators" value="=" onclick="calculate()"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
